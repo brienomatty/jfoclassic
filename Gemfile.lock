@@ -142,11 +142,6 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.1)
       loofah (~> 2.0)
-    rails_12factor (0.0.2)
-      rails_serve_static_assets
-      rails_stdout_logging
-    rails_serve_static_assets (0.0.3)
-    rails_stdout_logging (0.0.3)
     railties (4.2.0)
       actionpack (= 4.2.0)
       activesupport (= 4.2.0)
@@ -212,7 +207,6 @@ DEPENDENCIES
   minitest-reporters (= 1.0.5)
   pg (= 0.17.1)
   rails (= 4.2.0)
-  rails_12factor (= 0.0.2)
   sass-rails (= 5.0.0.beta1)
   sdoc (= 0.4.0)
   spring (= 1.1.3)
