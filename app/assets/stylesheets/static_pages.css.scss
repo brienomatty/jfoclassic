@@ -1,3 +1,22 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.logos {
+	display: inline-block;
+	width: 100%;
+	word-wrap: break-word;
+}
+
+.logo-text {
+	font-size: 1.7em;
+}
+
+.logo-image {
+	text-align: center;
+	padding: 0px auto;
+	width: 150px; 
+	height: 180px; 
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+}
