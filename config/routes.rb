@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   get 'signup'  => 'users#new'
   get 'blog'    => 'blog#blog'
   get 'joecool' => 'static_pages#joecool'
+  get 'sponsors' => 'static_pages#sponsors'
   resources :charges
 end
