@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 .logos {
 	display: inline-block;
 	word-wrap: break-word;
@@ -36,4 +37,16 @@
 .sponsor-btn {
 	margin-top: 20px;
 	text-align: center;
+}
+
+#recap-link {
+	display: inline-block;
+	padding: 5px; 
+	float: right;
+}
+
+#homepage-title {
+	float: right;
+	margin-bottom: 20px;
+	margin-top: -20px;
 }

@@ -10,6 +10,7 @@ gem 'turbolinks',           '2.3.0'
 gem 'jbuilder',             '2.2.3'
 gem 'sdoc',                 '0.4.0', group: :doc
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+gem 'bootstrap-addons-rails'
 
 group :development, :test do
   gem 'sqlite3',     '1.3.9'

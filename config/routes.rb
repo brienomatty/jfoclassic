@@ -7,5 +7,7 @@ Rails.application.routes.draw do
   get 'blog'    => 'blog#blog'
   get 'joecool' => 'static_pages#joecool'
   get 'sponsors' => 'static_pages#sponsors'
+  get 'recap'   => 'static_pages#recap'
+  get 'leaderboard' => 'leaderboard#leaderboard'
   resources :charges
 end
