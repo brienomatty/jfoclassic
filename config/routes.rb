@@ -9,5 +9,6 @@ Rails.application.routes.draw do
   get 'sponsors' => 'static_pages#sponsors'
   get 'recap'   => 'static_pages#recap'
   get 'leaderboard' => 'leaderboard#leaderboard'
+  get 'raffle'  => 'static_pages#raffle'
   resources :charges
 end
