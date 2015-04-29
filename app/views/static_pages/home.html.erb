@@ -1,5 +1,65 @@
-<div class="center jumbotron">
-<div id="recap-link">
+<!--<div class="center jumbotron">-->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <%= image_tag("dad.jpg", :alt => "Joe O'Brien") %>
+      <div class="carousel-caption">
+        <h1>In memory of a great father, friend, and son</h1>
+        <p>Joseph F. O'Brien 1962-2010</p>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag("lederach-large.jpg", :alt => "Lederach Golf Club") %>
+      <div class="carousel-caption">
+        <h1>3rd Annual JFO Classic - June 6, 2015 <br/>Lederach Golf Club</h1>
+        <%= link_to "Sign up today!", signup_path , class: "btn btn-lg btn-primary" %>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag("budget-large.jpg", :alt => "Close-up towel and signs") %>
+      <div class="carousel-caption">
+        <h1>We run a great event - all thanks to our sponsors</h1>
+        <%= link_to "Sponsor us now!", sponsors_path , class: "btn btn-lg btn-primary" %>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag("lifesaver-large.jpg", :alt => "Close-up towel and signs") %>
+      <div class="carousel-caption">
+        <h1>We sweat the small stuff</h1>
+        <%= link_to "Check out our blog to find out more about us!", blog_path , class: "btn btn-lg btn-primary" %>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag("uncles-large.jpg", :alt => "Close-up towel and signs") %>
+      <div class="carousel-caption">
+        <h1>It's all about family</h1>
+        <%= link_to "Follow us on Facebook!", "http://www.facebook.com/JFOGolfOuting" , class: "btn btn-lg btn-primary" %>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!--<div id="recap-link">
 <p>Check out last year's <%= link_to 'fun!', recap_path %></p>
 </div>
 <div id="homepage-title">
@@ -11,6 +71,6 @@
   <br/>
 
     <%= link_to "Sign up now!", signup_path , class: "btn btn-lg btn-primary" %>
-</div>
+</div>-->
 
 <%= render 'layouts/sponsors' %>
