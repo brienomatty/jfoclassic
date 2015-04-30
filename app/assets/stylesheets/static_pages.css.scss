@@ -42,6 +42,7 @@
 .sponsor-btn {
 	margin-top: 20px;
 	text-align: center;
+	display: block;
 }
 
 #recap-link {
@@ -70,3 +71,7 @@ figure figcaption {
 #raffle {
 	background: #C0C0C0;
 	}
+
+#inline {
+	display: block;
+}

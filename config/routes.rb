@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   get 'recap'   => 'static_pages#recap'
   get 'leaderboard' => 'leaderboard#leaderboard'
   get 'raffle'  => 'static_pages#raffle'
+  get 'thankyou' => 'static_pages#thankyou'
   resources :charges
 end
