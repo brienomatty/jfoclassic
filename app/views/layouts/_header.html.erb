@@ -1,16 +1,23 @@
 <header class="navbar navbar-fixed-top navbar-inverse top-margin">
   <div class="container">
-    <%= link_to "JFO Memorial Foundation", root_path, id: "logo" %>
     <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",    root_path %></li>
-        <li><%= link_to "Blog",    blog_path %></li>
-        <!--<li><%= link_to "Joe Cool",    joecool_path %></li>
-        <!--<li><%= link_to "Log in", '404.html' %></li>-->
-        <li><%= link_to "Sponsor Us", sponsors_path %></li>
-        <li><%= link_to "Register", signup_path %></li>
-        <!--<li id="raffle"><%= link_to "MARCH RAFFLE", raffle_path %></li>-->
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand"><%= link_to "JFO Memorial Foundation", root_path, id: "logo" %></a>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to "Home",    root_path %></li>
+          <li><%= link_to "Blog",    blog_path %></li>
+          <!--<li><%= link_to "Joe Cool",    joecool_path %></li>
+          <!--<li><%= link_to "Log in", '404.html' %></li>-->
+          <li><%= link_to "Sponsor Us", sponsors_path %></li>
+          <li><%= link_to "Register", signup_path %></li>
+          <!--<li id="raffle"><%= link_to "MARCH RAFFLE", raffle_path %></li>-->
       </ul>
+      </div>
     </nav>
   </div>
 </header>
