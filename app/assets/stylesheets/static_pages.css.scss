@@ -17,7 +17,7 @@ $break-large: 1200px;
 }
 
 .logo-text {
-	font-size: 1.7em;
+	font-size: 1.4em;
 }
 
 .logo-image {
@@ -76,17 +76,27 @@ figure figcaption {
 	}
 
 #inline {
-	display: block;
+	display: inline-block;
 }
 
 .list-inline {
-	margin-left: 50px;
+	width: 100%;
+    list-style: none;
+    margin: auto;
+    padding: 10px;
 }
 
-.center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+.list-inline ul li{
+    width: 24.4%;
+margin: 0px !important;
+padding: 0px !important;
+display: inline-block;
+float: left;
+}
+
+li img {
+    width: 90px;
+    height: 80px;
 }
 
 .carousel-inner {
@@ -102,4 +112,9 @@ figure figcaption {
 	@media screen and (max-width: $break-small) {
   font-size: 100%;
   }
+}
+
+.clear{
+    /* This class clears the floats */
+    clear:both;
 }
