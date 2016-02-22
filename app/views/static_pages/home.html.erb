@@ -1,4 +1,5 @@
 <!--<div class="center jumbotron">-->
+<div class="row row-centered col-lg-8">
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -6,19 +7,18 @@
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
     <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    <div class="item active">
+    <!--<div class="item active">
       <%= image_tag("dad.jpg", :alt => "Joe O'Brien") %>
       <div class="carousel-caption">
         <h1>In memory of a great father, friend, brother, husband, and son</h1>
         <p>Joseph F. O'Brien 1962-2010</p>
       </div>
-    </div>
-    <div class="item">
+    </div>-->
+    <div class="item active">
       <%= image_tag("lederach-large.jpg", :alt => "Lederach Golf Club") %>
       <div class="carousel-caption">
         <h3>4th Annual JFO Classic - June 4, 2016 <br/>Lederach Golf Club*</h3>
@@ -74,5 +74,6 @@
 
     <%= link_to "Sign up now!", signup_path , class: "btn btn-lg btn-primary" %>
 </div>-->
+</div>
 
 <%= render 'layouts/sponsors' %>
