@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root             'static_pages#home'
+  get 'posts'   => 'posts#index'
   get 'help'    => 'static_pages#help'
   get 'about'   => 'static_pages#about'
   get 'contact' => 'static_pages#contact'
@@ -12,4 +13,5 @@ Rails.application.routes.draw do
   get 'raffle'  => 'static_pages#raffle'
   get 'thankyou' => 'static_pages#thankyou'
   resources :charges
+  resources :posts
 end
