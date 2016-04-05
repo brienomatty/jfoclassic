@@ -3,7 +3,7 @@
 <%= @post.title %>
 </h1>
 <p class="date">
- Published <%= time_ago_in_words(@post.created_at) %> Ago
+ Published <%= time_ago_in_words(@post.created_at) %> ago
  <% if user_signed_in? %>
  | <%= link_to 'Edit', edit_post_path(@post) %>
  | <%= link_to 'Delete', post_path(@post), method: :delete, data: { confirm: 'Are you sure?'} %>
@@ -12,7 +12,7 @@
 <% end %>
 
 <p class="body">
-<%= @post.body %>
+<%= @post.body.html_safe %>
 </p>
 
 <div id="comments">
