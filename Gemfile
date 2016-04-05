@@ -13,6 +13,7 @@ gem 'sdoc',                 '0.4.0', group: :doc
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'bootstrap-addons-rails'
 gem 'owlcarousel-rails', '~> 1.1.3.3'
+gem 'devise'
 
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
