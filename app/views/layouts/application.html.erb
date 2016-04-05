@@ -21,7 +21,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <%= render 'layouts/header' %>
     <div class="container">
       <%= yield %>
+      <!--<div id="sidebar">
+       <div id="logo">
+        <%= link_to root_path do %>
+        <%= image_tag "jfo_logo_nowords.jpeg" %>
+        <% end %>
+       </div>
+
+       <ul>
+        <li class="category">Website</li>
+        <li><%= link_to "Blog", blog_path %></li>
+        <li>About</li>
+       </ul>
+      </div>-->
+
       <%= render 'layouts/footer' %>
-    </div>
   </body>
 </html>
