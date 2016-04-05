@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+
+ resources :posts do
+  resources :comments
+ end
+ 
   root             'static_pages#home'
   get 'posts'   => 'posts#index'
   get 'help'    => 'static_pages#help'
@@ -12,6 +17,5 @@ Rails.application.routes.draw do
   get 'leaderboard' => 'leaderboard#leaderboard'
   get 'raffle'  => 'static_pages#raffle'
   get 'thankyou' => 'static_pages#thankyou'
-  resources :charges
-  resources :posts
+
 end
